@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;614;706&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css"> 
+</head>
+<script type='text/javascript' src='config.js'> </script>
+<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+<body>
+  <header>
+    <h1 class="header__title" align="center">Real-Time Location Tracker</h1>
+    
+  </header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+  <!-- <script src="loc.js" type="text/javascript"></script> -->
+
+  <div class="real-time-interface">
+    <p id="real-time-title" class="real-time-interface__title" align ="center">Click start to begin audio detection</p>
+    <p id="button" onclick="getLocation();" class="real-time-interface__button" align ="center">Start</p>
+    <!-- <input type="button" onclick="getLocation();" value="Get Location"/> -->
+    <p id="message" class="real-time-interface__message"></p>
+  </div>
+<div class='info'>
+  <p class="header__sub-title">AssemblyAI's API to detect Speech to text</p>
+    <ls class="header__sub-title2">
+      <li>Spoken word is understood using AssemblyAI's API and used to provide a running commentry </li>
+      <li>It's speech emotion feature may be used to trigger emergency call inthe future</li>
+    </ls>
+    <p class="header__sub-title">Twilio's Communication API to call and send messages!</p>
+    <ls class="header__sub-title2">
+      <li>Get the option to set a safeword ("Donuts") to trigger call to the set emergency contact or emergency personel</li>
+      <li>Transcribe the conversation and send current location in real time periodically</li>
+    </ls>
+    <p class="header__sub-title">Google Maps Embed API to retrieve and send location!</p>
+    <ls class="header__sub-title2">
+      <li>Gets the current geolocation so that it can be shared with the backup personel </li>
+      <li>Embed API is used to provide map view of the current location </li>
+    </ls>
+    <p class="header__sub-title">Firebase for storing the records</p>
+    <ls class="header__sub-title2">
+      <li>Data is stored in a organised manner to be referred later</li>
+      <li>All the sent messages with timestamps are stored securely</li>
+    </ls>
+
+  </div>
+  
+  <script src="./js/index.js"></script>
+</body>
+</html>
